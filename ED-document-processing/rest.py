@@ -47,6 +47,11 @@ def post_invoice():
     print(request)
     add_document("invoice")
 
+@app.route("/post_test", methods=['POST'])
+@request_exception_handler
+def post_invoice():
+    return request
+
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=8080)
+    app.run(host='192.168.43.188', port=8080)
