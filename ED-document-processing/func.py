@@ -129,7 +129,7 @@ def gr16_2():
     return (a)
 
 
-def gr17_2():
+def gr17_1():
     a = json.dumps('RU')
     return (a)
 
@@ -192,7 +192,7 @@ def gr24_1():
     return (a)
 
 
-def gr24_1():
+def gr24_2():
     a = json.dumps('00')
     return (a)
 
