@@ -3,11 +3,10 @@ from CMR import*
 from Contract import*
 from Invoice import*
 from Agreement import*
+from gr47 import*
 sokr_cntr_lst={ 'RUSSIA' : 'RU', 'SWITZERLAND': 'SW', 'Australia': 'AUS' }
 cntr_lst={ 'RUSSIA' : 'РОССИЯ', 'SWITZERLAND': 'ШВЕЙЦАРИЯ', 'Australia': 'Австралия' }
-tvr={'KOD1' : 'Плиты, листы, пленка, лента и прочие плоские полимерные самоклеящиеся формы, в рулонах шириной не более 20 см'}
-stavka={'Плиты, листы, пленка, лента и прочие плоские полимерные самоклеящиеся формы, в рулонах шириной не более 20 см': '6.5',
-        }
+
 def gr1_1():
     a=json.dumps('ИМ')
     return (a)
@@ -34,8 +33,8 @@ def gr5():
     return (a)
 
 def gr6():
-    b = list(Товар[0])
-    a=json.dumps(b[0])
+    x = list(Товар[0])
+    a=json.dumps(x[0])
     return (a)
 
 def gr8_1():
@@ -177,7 +176,7 @@ def gr30():
     return (a)
 
 def gr31():
-    a=json.dumps(tvr[gr33()])
+    a=json.dumps(tvr[b])
     return (a)
 
 def gr32():
@@ -227,6 +226,7 @@ def gr46():
 
 def gr54():
     b = ' '.join(pasp) + '\n' + ' '.join(dov)+ '\n'
+    print(b)
     a=json.dumps(b)
     return (a)
 

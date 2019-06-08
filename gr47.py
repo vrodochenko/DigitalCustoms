@@ -45,26 +45,13 @@ def gr47():
     ##Подсчет налогоблагаемой базы для НДС
     baza_nds=round(poshlina+int(ctoim) * 65.03,2) 
     nds=round(baza_nds/100*tovar_plat[1],2)
-    sbor47='1010   '+ str(round(int(ctoim) * 65.03,2))+'   ' + str(sbor) +'РУБ  '  + str(sbor )+'.00   '+ ' ИУ'
-    poshlina47='2010   '+ str(round(int(ctoim) * 65.03,2))+'   ' + str(tovar_plat[0]) +'%  '  + str(poshlina )+'   '+ ' ИУ'
-    nds47='5010   '+ str(baza_nds)+'   ' + str(tovar_plat[1]) +'%  '  + str(nds )+'   '+ ' ИУ'
-    print(sbor47)
-    print(poshlina47)
-    print(nds47)
+    plat47='1010   '+ str(round(int(ctoim) * 65.03,2))+'   ' + str(sbor) +'РУБ  '  + str(sbor )+'.00   '+ ' ИУ'+'\n'+'2010   '+ str(round(int(ctoim) * 65.03,2))+'   ' + str(tovar_plat[0]) +'%  '  + str(poshlina )+'   '+ ' ИУ'+'\n'+'5010   '+ str(baza_nds)+'   ' + str(tovar_plat[1]) +'%  '  + str(nds )+'   '+ ' ИУ'
+    print(plat47)
     ##Запись json gr47.
-    a1=json.dumps(sbor47)
-    a2=json.dumps(poshlina47)
-    a3=json.dumps(nds47)
-    b_sbor='1010-'+str(sbor)+'.00-643-123-08.06.2019-БН'
-    b_poshlina='2010-'+str(poshlina)+'-643-123-08.06.2019-БН'
-    b_nds='5010-'+str(nds)+'-643-123-08.06.2019-БН'
-    a4=json.dumps(b_sbor)
-    a5=json.dumps(b_poshlina)
-    a6=json.dumps(b_nds)
-    
-    print(b_sbor)
-    print(b_poshlina)
-    print(b_nds)
-    return(a1,a2,a3,a4,a5,a6)
+    a=json.dumps(plat47)
+    all_b='1010-'+str(sbor)+'.00-643-123-08.06.2019-БН'+'\n'+'2010-'+str(poshlina)+'-643-123-08.06.2019-БН'+'\n'+'5010-'+str(nds)+'-643-123-08.06.2019-БН'
+    gr_b=json.dumps(all_b)
+    print(all_b)
+    return(a,gr_b)
 
 
