@@ -24,6 +24,8 @@ dov.append(a[a.index('до')+2])
 dov.append(a[a.index('до')+3])
 for i in range(1, len(dov)):
     num_dov.append(dov[i])
-print(pasp)
-print(dov)
-print(num_dov)
+
+if __name__ == "__main__":
+    print(pasp)
+    print(dov)
+    print(num_dov)

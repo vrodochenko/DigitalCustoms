@@ -1,5 +1,6 @@
 from docx import Document
 from docx2txt import*
+import json
 
 document = Document('CMR.docx')
 table = document.tables[0]
@@ -62,33 +63,33 @@ transcp = pars(50, 51, 0)
 vesy = ves()
 numcmr = num_cmr()
 
+if __name__ == "__main__":
+    print(Отправитель)
+    print(Получатель)
+    print(Перевозчик)
+    print(Место_разгрузки)
+    print(Место_погрузки)
+    print(Документы)
+    print(Товар)
+    print(tamogni)
+    print(oplata)
+    print(transcp)
+    print(vesy)
+    print(numcmr)
 
-print(Отправитель)
-print(Получатель)
-print(Перевозчик)
-print(Место_разгрузки)
-print(Место_погрузки)
-print(Документы)
-print(Товар)
-print(tamogni)
-print(oplata)
-print(transcp)
-print(vesy)
-print(numcmr)
+    resulting_json = {"Otpravitel": Отправитель,
+                "Poluchatel": Получатель,
+                "Perevozchik": Перевозчик,
+                "Mesto_razgruzki": Место_разгрузки,
+                "Mesto_pogruzki": Место_погрузки,
+                "Docs": Документы,
+                "Tovar": Товар,
+                "tamogni": tamogni,
+                "oplata": oplata,
+                "transcp": transcp,
+                "vesy": vesy,
+                "numcmr": numcmr
+                }
 
-resulting_json = {"Otpravitel": Отправитель,
-            "Poluchatel": Получатель,
-            "Perevozchik": Перевозчик,
-            "Mesto_razgruzki": Место_разгрузки,
-            "Mesto_pogruzki": Место_погрузки,
-            "Docs": Документы,
-            "Tovar": Товар,
-            "tamogni": tamogni,
-            "oplata": oplata,
-            "transcp": transcp,
-            "vesy": vesy,
-            "numcmr": numcmr
-			}
-
-with open("D:\\test_customs_json.json", 'w') as test_json:
-    json.dump(resulting_json, test_json)
+    with open("D:\\test_customs_json.json", 'w') as test_json:
+        json.dump(resulting_json, test_json)

@@ -35,7 +35,6 @@ a = text.split()
 inv = ['04031/0']
 for i in range (7, 10):
     inv.append(a[i])
-print(inv)
 
 Отправления = infogr[1][0].split()[-1]
 proizv = infogr[2][0].split()[-1]
@@ -43,11 +42,14 @@ proizv = infogr[2][0].split()[-1]
 valuta = infogr[4][-1].split()[-1]
 Колтов = infogr[6][0].split()[0]
 ctoim = infogr[6][-1].split()[-1]
-print(Отправления)
-print(proizv)
-print(Назначения)
-print(valuta)
-print(Колтов)
-print(ctoim)
+
+if __name__ == "__main__":
+    print(inv)
+    print(Отправления)
+    print(proizv)
+    print(Назначения)
+    print(valuta)
+    print(Колтов)
+    print(ctoim)
 
 
