@@ -49,9 +49,14 @@ def post_invoice():
 
 @app.route("/post_test", methods=['POST'])
 @request_exception_handler
-def post_invoice():
+def post_test():
+    return request
+
+@app.route("/get_test", methods=['GET'])
+@request_exception_handler
+def get_test():
     return request
 
 
 if __name__ == "__main__":
-    app.run(host='192.168.43.188', port=8080)
+    app.run(host='10.130.0.23', port=8080)
