@@ -1,0 +1,10 @@
+input {
+   border: 200px white;
+   background: #ffffff !important; 
+   outline: none;
+   height: 100px; 
+   width: 1000px; 
+   color: black; 
+   font-size: 50px; 
+   font-family: Tahoma; 
+}

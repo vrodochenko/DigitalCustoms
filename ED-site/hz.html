@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Конструктор документов</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../lib/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
+  <link href="../lib/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+  <link href="../lib/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
+  <link href="../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+  <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
+  <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': true %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': true %>
+</head>
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">EDecl</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="Easy_Declare.html">Главная</a></li>
+        <li><a href="about_us.html">О нас</a></li>
+        <li><a href="constructor.html">Конструктор</a></li>
+        <li><a href="#">Личный кабинет</a></li>
+    
+    </li>
+  
+  </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+<!-- az-content -->
+<div class="az-content az-content-dashboard">
+  <div class="container">
+    <div class="az-content-body">
+      <div class="az-dashboard-one-title">
+        <div>
+          <h2 class="az-dashboard-title">Hi, welcome back!</h2>
+          <p class="az-dashboard-text">Your web analytics dashboard template.</p>
+        </div>
+        <div class="az-content-header-right">
+          <div class="media">
+            <div class="media-body">
+              <label>Start Date</label>
+              <h6>Oct 10, 2018</h6>
+            </div><!-- media-body -->
+          </div><!-- media -->
+          <div class="media">
+            <div class="media-body">
+              <label>End Date</label>
+              <h6>Oct 23, 2018</h6>
+            </div><!-- media-body -->
+          </div><!-- media -->
+          <div class="media">
+            <div class="media-body">
+              <label>Event Category</label>
+              <h6>All Categories</h6>
+            </div><!-- media-body -->
+          </div><!-- media -->
+          <a href="" class="btn btn-purple">Export</a>
+        </div>
+      </div><!-- az-dashboard-one-title -->
+
+      <div class="az-dashboard-nav">
+        <nav class="nav">
+          <a class="nav-link active" data-toggle="tab" href="#">Overview</a>
+          <a class="nav-link" data-toggle="tab" href="#">Audiences</a>
+          <a class="nav-link" data-toggle="tab" href="#">Demographics</a>
+          <a class="nav-link" data-toggle="tab" href="#">More</a>
+        </nav>
+
+        <nav class="nav">
+          <a class="nav-link" href="#"><i class="far fa-save"></i> Save Report</a>
+          <a class="nav-link" href="#"><i class="far fa-file-pdf"></i> Export to PDF</a>
+          <a class="nav-link" href="#"><i class="far fa-envelope"></i>Send to Email</a>
+          <a class="nav-link" href="#"><i class="fas fa-ellipsis-h"></i></a>
+        </nav>
+      </div>
+
+      <div class="row row-sm mg-b-20">
+        <div class="col-lg-7 ht-lg-100p">
+          <div class="card card-dashboard-one">
+            <div class="card-header">
+              <div>
+                <h6 class="card-title">Website Audience Metrics</h6>
+                <p class="card-text">Audience to which the users belonged while on the current date range.</p>
+              </div>
+              <div class="btn-group">
+                <button class="btn active">Day</button>
+                <button class="btn">Week</button>
+                <button class="btn">Month</button>
+              </div>
+            </div><!-- card-header -->
+            <div class="card-body">
+              <div class="card-body-top">
+                <div>
+                  <label class="mg-b-0">Users</label>
+                  <h2>13,956</h2>
+                </div>
+                <div>
+                  <label class="mg-b-0">Bounce Rate</label>
+                  <h2>33.50%</h2>
+                </div>
+                <div>
+                  <label class="mg-b-0">Page Views</label>
+                  <h2>83,123</h2>
+                </div>
+                <div>
+                  <label class="mg-b-0">Sessions</label>
+                  <h2>16,869</h2>
+                </div>
+              </div><!-- card-body-top -->
+              <div class="flot-chart-wrapper">
+                <div id="flotChart" class="flot-chart" style="padding: 0px; position: relative;"><canvas class="flot-base" width="597" height="252" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 597.656px; height: 252px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 175px; top: 236px; left: 102px; text-align: center;">OCT 21</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 175px; top: 236px; left: 287px; text-align: center;">OCT 22</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 175px; top: 236px; left: 379px; text-align: center;">OCT 23</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 175px; top: 236px; left: 472px; text-align: center;">OCT 24</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 176px; left: 0px; text-align: right;">20K</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 132px; left: 0px; text-align: right;">40K</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 88px; left: 0px; text-align: right;">60K</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 44px; left: 0px; text-align: right;">80K</div></div></div><canvas class="flot-overlay" width="597" height="252" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 597.656px; height: 252px;"></canvas></div>
+              </div><!-- flot-chart-wrapper -->
+            </div><!-- card-body -->
+          </div><!-- card -->
+        </div><!-- col -->
+      </div><!-- row -->
+    </div><!-- az-content-body -->
+  </div>
+</div>
+<!-- az-content -->
+
+
+<div class="az-footer">
+  <div class="container">
+    <span>&copy; 2019</span>
+    <span>Designed by: Dev</span>
+  </div><!-- container -->
+</div><!-- az-footer -->
+</body>
+</html>
+

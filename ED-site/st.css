@@ -1,0 +1,12 @@
+.c-wd table , .c-wd td, .c-wd th {
+border: 1px solid #595959;
+border-collapse: collapse;
+}
+.c-wd td, .c-wd th {
+padding: 3px;
+width: 30px;
+height: 25px;
+}
+.c-wd th {
+background-color: #7accee!important;
+}

@@ -11,9 +11,9 @@ def generate():
         method = getattr(func, function_name)
         try:
             res = method()
-            print("Function {} passed and returned {}".format(function_name, res))
             if type(res) == list:
-                res
+                " ".join(res)
+            print("Function {} passed and returned {}".format(function_name, res))
             wonderful_declaration_dict[function_name] = res
         except:
             print("Cannot run function {}, skipping".format(function_name))
