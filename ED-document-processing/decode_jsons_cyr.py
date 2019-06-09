@@ -4,7 +4,7 @@ import json
 def decode_json(input_json):
     out_json = {}
     for elem in input_json:
-        out_json[elem]=json.loads(input_json[elem])
+        out_json[elem] = json.loads(input_json[elem])
     return out_json
 
 
