@@ -13,7 +13,7 @@ def generate():
         try:
             res = method()
             if type(res) == list:
-                " ".join(res)
+                res = " ".join(res)
             print("Function {} passed and returned {}".format(function_name, res))
             wonderful_declaration_dict[function_name] = res
         except:
