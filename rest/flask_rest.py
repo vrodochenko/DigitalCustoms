@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template, redirect
 from concurrent.futures import ThreadPoolExecutor
-from handlers import request_exception_handler
+from rest.handlers import request_exception_handler
 import os
 import json
 
