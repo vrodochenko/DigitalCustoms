@@ -1,6 +1,7 @@
 from docx2txt import*
+import os
 
-text = process("Agreement.docx")
+text = process(os.path.join("..", "Documents", "Agreement.docx"))
 a = text.split()
 pasp = ['1-11001/0']
 dov = ['2-11003/0 ДОВЕРЕННОСТЬ']

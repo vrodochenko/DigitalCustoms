@@ -1,6 +1,6 @@
 import json
 import func
-
+import os
 filling_functions = [elem for elem in dir(func) if elem.startswith("gr")]
 print(filling_functions)
 
@@ -21,7 +21,7 @@ def generate():
     return wonderful_declaration_dict
 
 
-def serialize(declaration_dict, path="all_fields.json"):
+def serialize(declaration_dict, path=os.path.join("..", "Documents", "all_fields.json")):
     with open(path, "w") as json_destination:
         json.dump(declaration_dict, json_destination)
 

@@ -1,8 +1,9 @@
+import os
 from docx import Document
-from docx2txt import*
+from docx2txt import *
 import json
 
-document = Document('CMR.docx')
+document = Document(os.path.join("..", "Documents", 'CMR.docx'))
 table = document.tables[0]
 
 data = []
@@ -16,9 +17,11 @@ for i, row in enumerate(table.rows):
     row_data = dict(zip(keys, text))
     data.append(row_data)
 
-infogr =[]
+infogr = []
 for elem in data:
     infogr.append(list(dict.values(elem)))
+
+
 ##for x in range(len(infogr)):
 ##    print(x)
 ##    print(infogr[x])
@@ -31,19 +34,24 @@ def pars(ot, do, ind):
     while '' in pregr:
         pregr.remove('')
     return pregr
+
+
 def ves():
-    text = process("CMR.docx")
+    text = process(os.path.join("..", "Documents", "CMR.docx"))
     a = text.split()
-    b = a[a.index("KG")-1]
+    b = a[a.index("KG") - 1]
     return b
+
+
 def num_cmr():
     num = ['02015/0']
-    text = process('CMR.docx')
+    text = process(os.path.join("..", "Documents", 'CMR.docx'))
     a = text.split()
     for i in range(1, 4):
         num.append(a[i])
     return num
-    
+
+
 Отправитель = pars(0, 5, 0)
 Отправитель.remove('\t\t')
 Получатель = pars(6, 11, 0)
@@ -78,18 +86,15 @@ if __name__ == "__main__":
     print(numcmr)
 
     resulting_json = {"Otpravitel": Отправитель,
-                "Poluchatel": Получатель,
-                "Perevozchik": Перевозчик,
-                "Mesto_razgruzki": Место_разгрузки,
-                "Mesto_pogruzki": Место_погрузки,
-                "Docs": Документы,
-                "Tovar": Товар,
-                "tamogni": tamogni,
-                "oplata": oplata,
-                "transcp": transcp,
-                "vesy": vesy,
-                "numcmr": numcmr
-                }
-
-    with open("D:\\test_customs_json.json", 'w') as test_json:
-        json.dump(resulting_json, test_json)
+                      "Poluchatel": Получатель,
+                      "Perevozchik": Перевозчик,
+                      "Mesto_razgruzki": Место_разгрузки,
+                      "Mesto_pogruzki": Место_погрузки,
+                      "Docs": Документы,
+                      "Tovar": Товар,
+                      "tamogni": tamogni,
+                      "oplata": oplata,
+                      "transcp": transcp,
+                      "vesy": vesy,
+                      "numcmr": numcmr
+                      }

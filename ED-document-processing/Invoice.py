@@ -1,7 +1,9 @@
+import os
 from docx import Document
-from docx2txt import*
+from docx2txt import *
 
-document = Document('Invoice.docx')
+document = Document(os.path.join("..", "Documents", "Invoice.docx"))
+table = document.tables[0]
 table = document.tables[0]
 
 data = []
@@ -15,25 +17,23 @@ for i, row in enumerate(table.rows):
     row_data = dict(zip(keys, text))
     data.append(row_data)
 
-infogr =[]
+infogr = []
 for elem in data:
     infogr.append(list(dict.values(elem)))
-##for x in range(len(infogr)):
-##    print(x)
-##    print(infogr[x])
+
 
 def pars_con():
-    if len(infogr[3][0].split())> 7:
+    if len(infogr[3][0].split()) > 7:
         a = infogr[3][0].split()[6] + " " + infogr[3][0].split()[7]
     else:
         a = infogr[3][0].split()[6]
     return a
 
 
-text = process("Invoice.docx")
+text = process(os.path.join("..", "Documents", "Invoice.docx"))
 a = text.split()
 inv = ['04031/0']
-for i in range (7, 10):
+for i in range(7, 10):
     inv.append(a[i])
 
 Отправления = infogr[1][0].split()[-1]
@@ -51,5 +51,3 @@ if __name__ == "__main__":
     print(valuta)
     print(Колтов)
     print(ctoim)
-
-

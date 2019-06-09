@@ -1,6 +1,6 @@
+import os
 from docx2txt import*
-
-text = process("Contract.docx")
+text = process(os.path.join("..", "Documents", "Contract.docx"))
 a = text.split()
 contr = ['03011/0']
 ogrn = a[a.index("ОГРН")+1]
