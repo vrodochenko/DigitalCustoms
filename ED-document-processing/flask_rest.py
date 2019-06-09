@@ -1,8 +1,10 @@
-from flask import Flask, request, render_template, redirect
+from flask import Flask, request, render_template, redirect, send_file
 from concurrent.futures import ThreadPoolExecutor
 from handlers import request_exception_handler
 import json
 import os
+
+os.chdir(".")
 
 DOCUMENT_NAMES = ["agreement", "cmd", "contract", "invoice"]
 SITE_LOCATION = os.path.join("..", "ED-site")
@@ -84,8 +86,14 @@ def get_json():
     if os.path.exists(json_path):
         with open(json_path) as jp:
             json_to_give = json.load(jp)
-
     return str(json_to_give)
+
+
+@app.route("/get_xlsx", methods=['GET'])
+@request_exception_handler
+def get_xlsx():
+    print(request)
+    return send_file("_result.xlsx", as_attachment=True)
 
 
 if __name__ == "__main__":

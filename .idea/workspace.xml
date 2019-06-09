@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7584843a-6948-4866-9772-c28e0a27356f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ED-site/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/ED-site/table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/django_rest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ED-document-processing/django_rest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/flask_rest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ED-document-processing/flask_rest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/ED-document-processing/handlers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,90 +19,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rest/flask_rest.py">
+        <entry file="file://$PROJECT_DIR$/ED-document-processing/flask_rest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            <state relative-caret-position="221">
+              <caret line="95" column="35" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
               <folding>
-                <element signature="e#749#892#0" />
+                <element signature="e#0#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ED-document-processing/convert_boostrap.py">
+        <entry file="file://$PROJECT_DIR$/ED-site/table.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../venvs/django-customs/Lib/ntpath.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="112" selection-start-line="112" selection-end-line="112" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ED-document-processing/generate_json.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ED-document-processing/decode_jsons_cyr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ED-document-processing/populate_file.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../venvs/django-customs/Lib/site-packages/openpyxl/compat/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../venvs/django-customs/Lib/shutil.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="103">
+              <caret line="228" column="60" lean-forward="true" selection-start-line="228" selection-start-column="60" selection-end-line="228" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -114,6 +52,7 @@
     <findStrings>
       <find>print</find>
       <find>json</find>
+      <find>xl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,7 +72,6 @@
         <option value="$PROJECT_DIR$/ED-document-processing/Invoice.py" />
         <option value="$PROJECT_DIR$/ED-document-processing/CMR.py" />
         <option value="$PROJECT_DIR$/ED-document-processing/rest.py" />
-        <option value="$PROJECT_DIR$/ED-document-processing/flask_rest.py" />
         <option value="$PROJECT_DIR$/flask_rest.py" />
         <option value="$PROJECT_DIR$/decode.py" />
         <option value="$PROJECT_DIR$/rest/__init__.py" />
@@ -142,6 +80,8 @@
         <option value="$PROJECT_DIR$/ED-document-processing/populate_file.py" />
         <option value="$PROJECT_DIR$/ED-document-processing/convert_boostrap.py" />
         <option value="$PROJECT_DIR$/rest/flask_rest.py" />
+        <option value="$PROJECT_DIR$/ED-site/table.html" />
+        <option value="$PROJECT_DIR$/ED-document-processing/flask_rest.py" />
       </list>
     </option>
   </component>
@@ -156,6 +96,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,13 +107,17 @@
             <path>
               <item name="DigitalCustoms" type="b2602c69:ProjectViewProjectNode" />
               <item name="DigitalCustoms" type="462c0819:PsiDirectoryNode" />
+              <item name="ED-document-processing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DigitalCustoms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DigitalCustoms" type="462c0819:PsiDirectoryNode" />
               <item name="ED-site" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,18 +126,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\DigitalCustoms" />
-      <recent name="D:\DigitalCustoms\Documents" />
-      <recent name="D:\DigitalCustoms\ED-document-processing" />
-      <recent name="D:\DigitalCustoms\ED-site" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\DigitalCustoms\ED-document-processing" />
       <recent name="D:\DigitalCustoms\Documents" />
       <recent name="D:\DigitalCustoms\rest" />
       <recent name="D:\DigitalCustoms\ED-site" />
       <recent name="D:\DigitalCustoms" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DigitalCustoms" />
+      <recent name="D:\DigitalCustoms\Documents" />
+      <recent name="D:\DigitalCustoms\ED-document-processing" />
+      <recent name="D:\DigitalCustoms\ED-site" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -207,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.flask_rest (1)">
+  <component name="RunManager" selected="Python.flask_rest">
     <configuration name="convert_boostrap" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DigitalCustoms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -262,7 +207,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rest/flask_rest.py" />
+      <option name="SCRIPT_NAME" value="D:\DigitalCustoms\ED-document-processing\flask_rest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="flask_rest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DigitalCustoms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ED-document-processing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ED-document-processing/flask_rest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -292,34 +258,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="populate_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DigitalCustoms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ED-document-processing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ED-document-processing/populate_file.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.flask_rest" />
         <item itemvalue="Python.flask_rest (1)" />
         <item itemvalue="Python.convert_boostrap" />
         <item itemvalue="Python.generate_json" />
         <item itemvalue="Python.decode" />
-        <item itemvalue="Python.populate_file" />
       </list>
     </recent_temporary>
   </component>
@@ -344,12 +289,12 @@
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24330357" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50074404" side_tool="true" visible="true" weight="0.36497545" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.36497545" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49925596" visible="true" weight="0.36497545" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39770868" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -427,7 +372,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest/handlers.py">
+    <entry file="file://$PROJECT_DIR$/ED-document-processing/handlers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
@@ -567,13 +512,7 @@
     <entry file="file://$PROJECT_DIR$/ED-site/back.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ED-document-processing/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ED-document-processing/test.json" />
     <entry file="file://$PROJECT_DIR$/Documents/all_fields.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -581,7 +520,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest/django_rest.py">
+    <entry file="file://$PROJECT_DIR$/ED-document-processing/django_rest.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../venvs/django-customs/Lib/site-packages/docx/table.py">
@@ -605,45 +544,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ED-site/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Documents/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ED-site/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/Documents/__init__.py" />
     <entry file="file://$PROJECT_DIR$/ED-document-processing/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/rest/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/django-customs/Lib/shutil.py">
+    <entry file="file://$PROJECT_DIR$/ED-document-processing/convert_boostrap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/django-customs/Lib/site-packages/openpyxl/compat/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="51">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../venvs/django-customs/Lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="1836">
           <caret line="112" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/ED-document-processing/generate_json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="204">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -660,7 +588,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ED-document-processing/populate_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
+        <state relative-caret-position="969">
           <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -668,22 +596,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ED-document-processing/convert_boostrap.py">
+    <entry file="file://$PROJECT_DIR$/../venvs/django-customs/Lib/site-packages/openpyxl/compat/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="697">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest/flask_rest.py">
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/django-customs/Lib/shutil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ED-site/constructor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ED-site/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="228" column="60" lean-forward="true" selection-start-line="228" selection-start-column="60" selection-end-line="228" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ED-document-processing/flask_rest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="95" column="35" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
           <folding>
-            <element signature="e#749#892#0" />
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
