@@ -17,6 +17,10 @@ def populate_from_json(source_json_file, target_file):
 def populate_text_file_from_json(source_json_file, target_file):
     with open(source_json_file) as src:
         declaration_dict = json.load(src)
+        for key in declaration_dict.keys():  # flatten a dictionary
+            if type(declaration_dict[key]) == list:
+                declaration_dict[key] = " ".join(declaration_dict[key])
+
     result_file = target_file.split(".")[0] + "_result." + target_file.split(".")[-1]
     f = open(result_file, "w")
     try:
@@ -43,11 +47,13 @@ def populate_xlsx_file_from_json(source_json_file, target_file):
         sheet1 = xls_file.get_sheet_by_name('r1-6')
         MAX_ROWS = 300
         MAX_COLUMNS = 150
-        for num_r in range(1,MAX_ROWS):
-            for num_c in range(1,MAX_COLUMNS):
+        for num_r in range(1, MAX_ROWS):
+            for num_c in range(1, MAX_COLUMNS):
                 if sheet1.cell(num_r, num_c).value is not None:
                     for key in declaration_dict.keys():
-                        if(sheet1.cell(num_r, num_c).value == key):
+                        if sheet1.cell(num_r, num_c).value == key:
+                            if type(declaration_dict[key]) == list:
+                                declaration_dict[key] = " ".join(declaration_dict[key])
                             sheet1.cell(num_r, num_c).value = declaration_dict[key]
         xls_file.save(result_file)
     except (OSError, IOError) as e:

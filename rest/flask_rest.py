@@ -81,7 +81,7 @@ def get_json():
         with open(json_path) as jp:
             json_to_give = json.load(jp)
 
-    return str(json_to_give) # json.dumps(json_to_give)
+    return str(json_to_give)
 
 
 if __name__ == "__main__":
