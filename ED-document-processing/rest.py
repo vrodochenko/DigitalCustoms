@@ -12,9 +12,11 @@ app = Flask(__name__)
 def index():
     return "Hello, this is a customs declaration app! Put 4 documents here."
 
+
 @app.route("/test_container")
 def another_site():
     return "Hello, this is a new webpage."
+
 
 def add_document(name):
     return "Document {} added successfully!".format(name)
@@ -47,15 +49,17 @@ def post_invoice():
     print(request)
     add_document("invoice")
 
+
 @app.route("/post_test", methods=['POST'])
 @request_exception_handler
 def post_test():
-    return request
+    return str(request)
+
 
 @app.route("/get_test", methods=['GET'])
 @request_exception_handler
 def get_test():
-    return request
+    return str(request)
 
 
 if __name__ == "__main__":
