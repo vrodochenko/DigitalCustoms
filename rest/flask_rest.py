@@ -1,8 +1,8 @@
 from flask import Flask, request, render_template, redirect
 from concurrent.futures import ThreadPoolExecutor
-from rest.handlers import request_exception_handler
-import os
+from handlers import request_exception_handler
 import json
+import os
 
 DOCUMENT_NAMES = ["agreement", "cmd", "contract", "invoice"]
 SITE_LOCATION = os.path.join("..", "ED-site")
@@ -14,6 +14,10 @@ app = Flask(__name__, template_folder=SITE_LOCATION, static_folder=SITE_LOCATION
 
 def add_document(name):
     return "Document {} added successfully!".format(name)
+
+
+def parse_documents():
+    convert_bootstrap.collect_data()
 
 
 @app.route("/")
