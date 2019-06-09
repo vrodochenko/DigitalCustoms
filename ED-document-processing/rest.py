@@ -1,6 +1,8 @@
 from flask import Flask, request
 from concurrent.futures import ThreadPoolExecutor
 from handlers import request_exception_handler
+import os
+import json
 
 DOCUMENT_NAMES = ["agreement", "cmd", "contract", "invoice"]
 executor = ThreadPoolExecutor(4)
@@ -61,6 +63,15 @@ def post_test():
 def get_test():
     return str(request)
 
+@app.route("/get_json", methods=['GET'])
+@request_exception_handler
+def get_test():
+    print(request)
+    json_path = os.path.join("..", "Documents", "all_fields.json")
+    if os.path.exists(json_path):
+        with open(json_path) as jp:
+            json_to_give = json.load(jp)
+    return json.dumps(json_to_give)
 
 if __name__ == "__main__":
     app.run(host='10.130.0.23', port=8080)
