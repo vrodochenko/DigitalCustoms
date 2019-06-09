@@ -1,6 +1,7 @@
 import json
 import func
 import os
+from decode_jsons_cyr import decode_json
 filling_functions = [elem for elem in dir(func) if elem.startswith("gr")]
 print(filling_functions)
 
@@ -18,6 +19,7 @@ def generate():
         except:
             print("Cannot run function {}, skipping".format(function_name))
             continue
+    wonderful_declaration_dict = decode_json(wonderful_declaration_dict)
     return wonderful_declaration_dict
 
 
@@ -27,4 +29,4 @@ def serialize(declaration_dict, path=os.path.join("..", "Documents", "all_fields
 
 
 if __name__ == "__main__":
-    serialize(generate())
+    print(serialize(generate()))

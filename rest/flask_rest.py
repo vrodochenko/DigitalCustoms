@@ -19,7 +19,7 @@ def add_document(name):
 @app.route("/")
 @request_exception_handler
 def index():
-    return render_template('/easy_declare.html')
+    return render_template('/Easy_Declare.html')
 
 
 @app.route('/<path:subpath>')
