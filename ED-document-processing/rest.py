@@ -63,9 +63,10 @@ def post_test():
 def get_test():
     return str(request)
 
+
 @app.route("/get_json", methods=['GET'])
 @request_exception_handler
-def get_test():
+def get_json():
     print(request)
     json_path = os.path.join("..", "Documents", "all_fields.json")
     if os.path.exists(json_path):
@@ -73,5 +74,6 @@ def get_test():
             json_to_give = json.load(jp)
     return json.dumps(json_to_give)
 
+
 if __name__ == "__main__":
-    app.run(host='10.130.0.23', port=8080)
+    app.run(host='0.0.0.0', port=8080)
