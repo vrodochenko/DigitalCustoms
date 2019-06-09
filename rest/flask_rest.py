@@ -9,7 +9,7 @@ SITE_LOCATION = os.path.join("..", "ED-site")
 STATIC_FILE_LOCATION = os.path.join("..", "ED-site", "CSS")
 executor = ThreadPoolExecutor(4)
 
-app = Flask(__name__, template_folder=SITE_LOCATION)
+app = Flask(__name__, template_folder=SITE_LOCATION, static_folder=SITE_LOCATION)
 
 
 def add_document(name):
@@ -19,14 +19,17 @@ def add_document(name):
 @app.route("/")
 @request_exception_handler
 def index():
-    return redirect('/easy_declare.html')
+    return render_template('/easy_declare.html')
 
 
 @app.route('/<path:subpath>')
 @request_exception_handler
 def show_subpath(subpath):
     print(subpath)
-    return render_template(subpath)
+    if subpath.endswith(".html"):
+        return render_template(subpath)
+    else:
+        return app.send_static_file(subpath)
 
 
 @app.route("/post_agreement", methods=['POST'])
