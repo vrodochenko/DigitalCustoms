@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7584843a-6948-4866-9772-c28e0a27356f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DigitalCustoms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DigitalCustoms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ED-document-processing/_result.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ED-document-processing/_result.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ED-document-processing/convert_boostrap.py" beforeDir="false" afterPath="$PROJECT_DIR$/ED-document-processing/convert_boostrap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ED-site/Easy_Declare.html" beforeDir="false" afterPath="$PROJECT_DIR$/ED-site/Easy_Declare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/flask_rest.py" beforeDir="false" afterPath="$PROJECT_DIR$/rest/flask_rest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ED-site/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/ED-site/table.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +15,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rest/flask_rest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+            <state relative-caret-position="17">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
                 <element signature="e#749#892#0" />
               </folding>
             </state>
@@ -169,6 +162,11 @@
             <path>
               <item name="DigitalCustoms" type="b2602c69:ProjectViewProjectNode" />
               <item name="DigitalCustoms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DigitalCustoms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DigitalCustoms" type="462c0819:PsiDirectoryNode" />
+              <item name="ED-site" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -351,7 +349,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.36497545" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.36497545" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39770868" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -682,10 +680,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rest/flask_rest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        <state relative-caret-position="17">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
             <element signature="e#749#892#0" />
           </folding>
         </state>

@@ -1,80 +1,168 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Конструктор документов</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link href="css/dropify.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+ 
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <script async="" src="js/dropify.js"></script>
+	<!-- ruby личнйкабинет   -->
+	<script>
+	
+	 $( window ).on( "load", function() {
+       
+		$('.dropify').dropify();
+    });
+	</script>
+</head>
 <body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">EDecl</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="Easy_Declare.html">Главная</a></li>
+        <li><a href="about_us.html">О нас</a></li>
+        <li><a href="table.html">Конструктор</a></li>
+        <li><a href="dashboard-one.html">Личный кабинет</a></li>
+    
+    </li>
+  
+  </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <style type="text/css"> 
+table { 
+height: 650px;
+width: 40%; 
+border-collapse: collapse; 
+Margin:auto;
+} 
+th { 
+text-align: left; 
+padding: 5px; 
+border: 1px solid black; 
+} 
+td { 
+padding: 5px; 
+border: 1px solid black; 
+font-size: 15px;
+} 
+.gr9_1{
+	vertical-align:top;
+	text-align:right;
+	font-size: 13px;
+	height: 50px;
+}
+.gr9_3{
+	vertical-align:bottom;
+	text-align:left;
+	font-size: 13px;
+}
+.gr9_2{
+	vertical-align:middle;
+	text-align:center;
+	font-size: 13px;
+}
+.Otpr{
+	vertical-align:top;
+	height: 50px;
+	text-align:left;
+	font-size: 10px;
+}
+.text{
+	font-size: 10px;
+}
+</style> 
+</style> 
 <table>
 <tr>
 <td rowspan="10"></td>
-<td colspan="6" rowspan="3"></td>
-<td colspan="2"></td>
+<td colspan="6" rowspan="3"><div class="Otpr">2 Отправитель</div><div class="text">gr2</div></td>
+<td colspan="2" class="text"><div class="text">gr1_1 | gr1_2 | gr1_3</div></td>
 <td colspan="5" rowspan="2"></td>
 </tr>
 <tr>
-<td></td>
+<td><div class="Otpr">3 формы</div><div class="text">gr3</div></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
-<td colspan="2"></td>
-<td colspan="4"></td>
+<td colspan="2"><div class="Otpr">6 Всего мест</div><div class="text">gr_6</div></td>
+<td colspan="4"> </td>
 </tr>
 <tr>
-<td colspan="6" rowspan="2"></td>
+<td colspan="6" rowspan="2"><div class="Otpr">8 Получатель</div><div class="gr9_1">ИНН/КПП: gr8_1</div><div class="gr9_2">gr8_2</div><div class="gr9_3">ОГРН: gr8_3</div></td>
+<td colspan="7" ><div class="Otpr">Лицо, ответственное за финансовое урегулирование</div><div class="gr9_1">ИНН/КПП: gr9_1</div><div class="gr9_2">gr9_2</div><div class="gr9_3">ОГРН: gr9_3</div></td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2"><div class="Otpr">11 Страна происхождения</div><div class="text"> gr11_1</div></td>
+<td colspan="3"><div class="Otpr">12 Общая таможенная стоимость</div> <div class="text">gr_12</div></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="6" rowspan="2"><div class="Otpr">14 Декларант</div><div class="gr9_1">ИНН/КПП: gr14_1</div><div class="gr9_2">gr14_2</div><div class="gr9_3">ОГРН: gr14_3</div></td>
+<td colspan="3"><div class="Otpr"> 15 Страна отправления</div><div class="text">gr15_2</div></td>
+<td colspan="2"><div class="Otpr">15а Код страны происхождения</div><div class="text"> gr15_1</div></td>
+<td colspan="2"><div class="Otpr">17 Страна назначения</div><div class="text">gr17_1</div></td>
+</tr>
+<tr>
+<td colspan="3"><div class="Otpr">16 Страна происхождения</div><div class="text">gr_16</div></td>
+<td colspan="4"><div class="Otpr">17а Код страны происхождения</div><div class="text">gr17_2</div></td>
+</tr>
+<tr>
+<td colspan="7"><div class="Otpr">18 Идентификация и страна регистрации транспортного средства при  отправлении </div><div class="text">gr18_1 | gr18_2</div></td>
+<td><div class="Otpr">19 Контейнер </div><div class="text">gr19</div></td>
+<td colspan="5"><div class="Otpr">20 Условия поставки </div><div class="text">gr20</div></td>
+</tr>
+<tr>
+<td colspan="7"><div class="Otpr">21 Идентификация и старна регистрации транспортного средства на границе </div><div class="text">gr21_1 | gr21_2</div></td>
+<td colspan="3"><div class="Otpr">22 Валюта и общая сумма по счету </div><div class="text">gr22_1 | gr22_2</div></td>
+<td colspan="2"><div class="Otpr">23 Курс валюты </div><div class="text">gr23</div></td>
+<td colspan="2"><div class="Otpr">24 Характер сделки </div><div class="text">gr24_1 | gr24_2</div></td>
+</tr>
+<tr>
+<td colspan="3"><div class="Otpr">25 Вид транспорта на границе </div><div class="text">gr_25</div></td>
+<td colspan="3"><div class="Otpr">26 Вид транспорта внутри страны </div><div class="text">gr_26</div></td>
+<td colspan="3"><div class="Otpr">27 Место погрузки/разгрузки</div></td>
+<td colspan="4"><div class="Otpr">28 Финансовые и банковские сведения</div></td>
+</tr>
+<tr>
+<td></td>
+<td colspan="4"><div class="Otpr">29 Орган въезда </div><div class="text">gr29</div></td>
+<td colspan="2"><div class="Otpr">30 Место нахождения товара </div><div class="text">gr30</div></td>
 <td colspan="7"></td>
 </tr>
 <tr>
-<td></td>
-<td colspan="2"></td>
-<td colspan="3"></td>
-<td></td>
+<td rowspan="3"><div class="Otpr">31 Грузовые места </div></td>
+<td colspan="7" rowspan="4"><div class="Otpr">Маркировка и количество-Номера контейнеров-Количество и отличительные особенности </div><div class="text">gr31</div></td>
+<td colspan="2"><div class="Otpr">32 Товар </div><div class="text">gr32</div></td>
+<td colspan="4"><div class="Otpr">33 Код товара </div><div class="text">gr33</div></td>
 </tr>
 <tr>
-<td colspan="6" rowspan="2"></td>
-<td colspan="3"></td>
-<td colspan="2"></td>
-<td colspan="2"></td>
+<td colspan="2"><div class="Otpr">34 Код страны происхождения </div><div class="text">gr34</div></td>
+<td colspan="2"><div class="Otpr">35 Вес брутто(кг) </div><div class="text">gr35</div></td>
+<td colspan="2"><div class="Otpr">36 Префернции </div><div class="text">gr36</div></td>
 </tr>
 <tr>
-<td colspan="3"></td>
-<td colspan="4"></td>
-</tr>
-<tr>
-<td colspan="5"></td>
-<td></td>
-<td colspan="7"></td>
-</tr>
-<tr>
-<td colspan="5"></td>
-<td></td>
-<td colspan="3"></td>
-<td colspan="2"></td>
-<td colspan="2"></td>
-</tr>
-<tr>
-<td colspan="2"></td>
-<td colspan="2"></td>
-<td colspan="2"></td>
-<td colspan="7"></td>
-</tr>
-<tr>
-<td></td>
-<td colspan="4"></td>
-<td colspan="2"></td>
-<td colspan="7"></td>
-</tr>
-<tr>
-<td rowspan="3"></td>
-<td colspan="7" rowspan="4"></td>
-<td colspan="2"></td>
-<td colspan="4"></td>
-</tr>
-<tr>
-<td colspan="2"></td>
-<td colspan="2"></td>
-<td colspan="2"></td>
-</tr>
-<tr>
-<td colspan="2"></td>
-<td colspan="2"></td>
+<td colspan="2"><div class="Otpr">37 Процедура </div><div class="text">gr37</div></td>
+<td colspan="2"><div class="Otpr">38 Вес нетто(кг) </div><div class="text">gr38</div></td>
 <td colspan="2"></td>
 </tr>
 <tr>
@@ -83,58 +171,64 @@
 </tr>
 <tr>
 <td></td>
-<td colspan="7"></td>
-<td colspan="3"></td>
-<td colspan="3"></td>
+<td colspan="7"><div class="Otpr">44 Дополнительная информация </div><div class="text">gr44</div></td>
+<td colspan="3"><div class="Otpr">41 Дополнительные единицы</div><div class="text">gr41</div></td>
+<td colspan="2"><div class="Otpr">42 Цена товара</div><div class="text">gr42</div></td>
+<td colspan="3"><div class="Otpr">43 Код МОС</div><div class="text">gr43</div></td>
 </tr>
 <tr>
-<td></td>
-<td colspan="11"></td>
-<td colspan="2"></td>
+<td><div class="Otpr">47 Платежи</div></td>
+<td colspan="7"><div class="Otpr">gr47</div></td>
+<td colspan="4"></td>
+<td colspan="3"></td>
 </tr>
 <tr>
 <td rowspan="3"></td>
 <td colspan="10"></td>
-<td colspan="3"></td>
-</tr>
-<tr>
-<td rowspan="2"></td>
-<td colspan="3" rowspan="2"></td>
-<td rowspan="2"></td>
-<td colspan="2" rowspan="2"></td>
-<td rowspan="2"></td>
-<td colspan="3"></td>
-<td colspan="2"></td>
-</tr>
-<tr>
-<td colspan="5"></td>
+<td colspan="3"><div class="Otpr">Побробности подсчета</div><div class="text">gr_b</div></td>
 </tr>
 <tr>
 <td></td>
-<td colspan="9" rowspan="2"></td>
-<td colspan="4" rowspan="2"></td>
-</tr>
-<tr>
-<td rowspan="3"></td>
-</tr>
-<tr>
-<td colspan="3"></td>
-<td colspan="2"></td>
-<td colspan="2"></td>
-<td colspan="2"></td>
-<td colspan="2"></td>
-<td colspan="2"></td>
-</tr>
-<tr>
-<td colspan="9"></td>
-<td colspan="4"></td>
-</tr>
-<tr>
-<td colspan="9"></td>
-<td colspan="5"></td>
+<td colspan="15" rowspan="2"><div class="Otpr">54 Место и дата</div><div class="text">gr54</div></td>
 </tr>
 </table>
+<div class="row"> <div class="row justify-content-md-center"> 
+<div class="col col-lg-2">
+<div class="form-group">
+    <label for="exampleInputEmail1">CMR</label>
+    <input type="file" value="Загрузите CMR" class="dropify" >
+  
+  </div>
+ </div>
+ <div class="col col-lg-2">
+<div class="form-group">
+    <label for="exampleInputEmail1">Invoice</label>
+    <input type="file" value="Загрузите CMR" class="dropify" >
+  
+  </div>
+ </div>
+ <div class="col col-lg-2">
+<div class="form-group">
+    <label for="exampleInputEmail1">Контракт</label>
+    <input type="file" value="Загрузите CMR" class="dropify" >
+  
+  </div>
+ </div>
+ <div class="col col-lg-2">
+<div class="form-group">
+    <label for="exampleInputEmail1">Доверенность</label>
+    <input type="file" value="Загрузите CMR" class="dropify" >
+  
+  </div>
+ </div>
+ 
+  </div> </div>
+ 
+<input value="Введите код товара:">
+<button class="PDF">выгрузка PDF</button>
+<button class="XML">выгрузка XML</button>
 </body>
+
 </html>
 
  
