@@ -1,3 +1,6 @@
+# Functional wrapper or 404 error
+# Courtesy of Andrew Romanovsky, 2019.
+
 import functools
 
 
