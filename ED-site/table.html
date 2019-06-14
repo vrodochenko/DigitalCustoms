@@ -192,38 +192,62 @@ font-size: 15px;
 <td colspan="15" rowspan="2"><div class="Otpr">54 Место и дата</div><div class="text">gr54</div></td>
 </tr>
 </table>
+
 <div class="row"> <div class="row justify-content-md-center"> 
 <div class="col col-lg-2">
+<form enctype=multipart/form-data action='post_contract' id="contract" name="contract" method=post target=contract>
 <div class="form-group">
-    <label for="exampleInputEmail1">CMR</label>
-    <input type="file" value="Загрузите CMR" class="dropify" >
-  
+    <label>Контракт</label>
+    <input type=file name=file value="Контракт" class="dropify" >
+	<iframe id=contract name=contract style="width:0px; height:0px; border:0px"></iframe>
   </div>
+  </form>
  </div>
+
+
  <div class="col col-lg-2">
+ <form enctype=multipart/form-data action='post_invoice' id="invoice" method=post target=invoice>
 <div class="form-group">
-    <label for="exampleInputEmail1">Invoice</label>
-    <input type="file" value="Загрузите CMR" class="dropify" >
-  
+    <label>Инвойс</label>
+    <input type=file name=file value="Инвойс" class="dropify" >
+	<iframe id=invoice name=invoice style="width:0px; height:0px; border:0px"></iframe>
   </div>
+  </form>
  </div>
+
+
  <div class="col col-lg-2">
+ <form enctype=multipart/form-data action='post_cmr' id="cmr" method=post target=cmr>
 <div class="form-group">
-    <label for="exampleInputEmail1">Контракт</label>
-    <input type="file" value="Загрузите CMR" class="dropify" >
-  
+    <label>CMR</label>
+    <input type=file name=file value="CMR" class="dropify" >
+	<iframe id=cmr name=cmr style="width:0px; height:0px; border:0px"></iframe>
   </div>
+  </form>
  </div>
+
+
  <div class="col col-lg-2">
+ <form enctype=multipart/form-data action='post_agreement' id="agreement" method=post target=agreement>
 <div class="form-group">
-    <label for="exampleInputEmail1">Доверенность</label>
-    <input type="file" value="Загрузите CMR" class="dropify" >
-  
+    <label>Доверенность</label>
+    <input type=file name=file value="Доверенность" class="dropify" >
+	<iframe id=agreement name=agreement style="width:0px; height:0px; border:0px"></iframe>
   </div>
+  </form>
  </div>
- 
-  </div> </div>
- 
+<form>
+  <input type="button" onclick="add_documents()" value="Загрузить документы"/>
+</form>
+</div> </div>
+<script type="text/javascript">
+function add_documents() {
+    document.forms["contract"].submit()
+	document.forms["invoice"].submit()
+	document.forms["cmr"].submit()
+	document.forms["agreement"].submit();
+}
+</script> 
 <input value="Введите код товара:">
 <button class="PDF" class="XML" onclick="window.location.href = '../get_json';">выгрузка JSON</button>
 <button class="XML" onclick="window.location.href = '../get_xlsx';">выгрузка XLSX</button>
