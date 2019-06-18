@@ -40,7 +40,11 @@ def populate_text_file_from_json(source_json_file, target_file):
 def populate_xlsx_file_from_json(source_json_file, target_file):
     with open(source_json_file) as src:
         declaration_dict = json.load(src)
-    result_file = target_file.split(".")[0] + "_result." + target_file.split(".")[-1]
+    llist=target_file.split("\\")
+    print(str(llist[-1]))
+    target_file_new=llist[-1].split(".")
+    print(target_file_new)
+    result_file = target_file_new[0] + "_result." + target_file_new[-1]
     shutil.copy(target_file, result_file)
     try:
         xls_file = openpyxl.load_workbook(result_file)
