@@ -5,6 +5,10 @@
  *
  * Made By MaterializeCSS.com
  */
+ *{
+	 box-sizing: border-box;
+ }
+
 
 nav ul a,
 nav .brand-logo {
@@ -53,8 +57,8 @@ p {
 }
 
 footer.page-footer {
-  margin: 0;
-  position: relative;
+  margin: 0 30px -30px;
+  position: relatives;
 }
 .class_photo{
 	width:100%;
@@ -101,9 +105,8 @@ position: relative;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#54d1a5', endColorstr='#EBFFFF');
     padding: 3px 7px;
     color: black;
-	position: absolute;
-	margin-left: 450px;
-	margin-right: 300px;
+	position: relative;
+	margin: 0 30px 30px;
 }
 .XML{
 	background: -moz-linear-gradient(#fa4688, #EBFFFF);
@@ -111,7 +114,12 @@ position: relative;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa4688', endColorstr='#EBFFFF');
     padding: 3px 7px;
     color: black;
-	position: absolute;
-	margin-left: 770px;
-	margin-right: 400px;
+	position: relative;
+	margin: 0 30px 30px;
+}
+.buttons{
+	box-sizing: border-box;
+	margin: 0 30px;
+	position: relative;
+	text-align:center;
 }

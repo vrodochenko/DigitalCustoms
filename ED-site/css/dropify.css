@@ -84,7 +84,7 @@
   .dropify-wrapper.disabled .dropify-infos-message {
     display: none; }
   .dropify-wrapper input {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     bottom: 0;
@@ -110,7 +110,7 @@
         display: none; }
   .dropify-wrapper .dropify-clear {
     display: none;
-    position: absolute;
+    position: relative;
     opacity: 0;
     z-index: 7;
     top: 10px;
@@ -129,7 +129,7 @@
       background: rgba(255, 255, 255, 0.2); }
   .dropify-wrapper .dropify-preview {
     display: none;
-    position: absolute;
+    position: relative;
     z-index: 1;
     background-color: #FFF;
     padding: 5px;
@@ -157,7 +157,7 @@
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
-      position: absolute;
+      position: relative;
       color: #777; }
     .dropify-wrapper .dropify-preview .dropify-render .dropify-extension {
       position: absolute;
@@ -193,7 +193,7 @@
         -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
         width: 100%;
-        padding: 0 20px;
+        margin: 0 auto;
         -webkit-transition: all 0.2s ease;
         transition: all 0.2s ease; }
         .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p {
@@ -216,7 +216,7 @@
             opacity: 0.5; }
             .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-infos-message::before {
               content: '';
-              position: absolute;
+              position: relative;
               top: 0;
               left: 50%;
               -webkit-transform: translate(-50%, 0);
@@ -267,7 +267,7 @@
           padding: 5px 90px 5px 0; }
           .dropify-wrapper.touch-fallback .dropify-preview .dropify-infos .dropify-infos-inner p {
             padding: 0;
-            margin: 0;
+            margin: 0 auto;
             position: relative;
             width: 100%;
             white-space: nowrap;
